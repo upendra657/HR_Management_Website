@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <!-- Add any additional CSS or styling here -->
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Department</th>
+                <th>Date of Joining</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Mobile No.</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for employee in employee_details %}
+            <tr>
+                <td>{{ employee[0] }}</td>
+                <td>{{ employee[1] }}</td>
+                <td>{{ employee[2] }}</td>
+                <td>{{ employee[3] }}</td>
+                <td>{{ employee[4] }}</td>
+                <td>{{ employee[5] }}</td>
+                <td>{{ employee[6] }}</td>
+                <td>{{ employee[7] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
